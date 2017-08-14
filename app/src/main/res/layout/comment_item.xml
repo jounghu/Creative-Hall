@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/id_comment_detail_head"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/id_comment_detail_head_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                fresco:placeholderImage="@mipmap/head"
+                fresco:roundAsCircle="true" />
+
+            <TextView
+                android:id="@+id/id_comment_detail_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_toRightOf="@+id/id_comment_detail_head_img"
+                android:text="模样单纯善良"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/id_comment_detail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_comment_detail_nickname"
+                android:layout_toRightOf="@+id/id_comment_detail_head_img"
+                android:text="1分钟前" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/id_comment_detail_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="官博敢不敢回复我一下"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="#000"
+        android:layout_below="@+id/id_comment_detail_head"
+        android:layout_marginLeft="72dp"
+        />
+</RelativeLayout>

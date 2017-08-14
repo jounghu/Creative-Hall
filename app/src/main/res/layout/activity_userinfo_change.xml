@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bottom_color"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_activity_collection_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <TextView
+        android:id="@+id/id_registe_toolbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="我的资料"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_size_large" />
+
+
+        <TextView
+            android:id="@+id/id_update_nickname_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="提交"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_large" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/id_activity_userinfo_change_headimg"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            fresco:placeholderImage="@mipmap/head"
+            fresco:roundAsCircle="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/tag"
+           android:layout_centerInParent="true"
+
+            android:layout_alignLeft="@+id/id_activity_userinfo_change_headimg"
+            android:layout_alignStart="@+id/id_activity_userinfo_change_headimg" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bottom_color" />
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/id_activity_userinfo_nickname_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="昵称"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/id_activity_userinfo_change_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="模样单纯善良"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bottom_color" />
+
+    <RelativeLayout
+        android:id="@+id/id_activity_userinfo_gender_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+
+
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="性别"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/id_activity_userinfo_change_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text="男"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bottom_color" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:clickable="false"
+
+
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="认证状态"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/id_activity_userinfo_change_regstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:clickable="false"
+            android:text="已认证"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bottom_color" />
+
+
+</LinearLayout>

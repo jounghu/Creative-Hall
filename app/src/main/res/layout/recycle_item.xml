@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:gravity="center_horizontal"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/id_recycle_item_head"
+
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    fresco:placeholderImage="@mipmap/head"
+                    fresco:roundAsCircle="true" />
+
+                <TextView
+                    android:id="@+id/id_recycle_item_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/id_recycle_item_head"
+                    android:text="模样单纯善良"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/id_recycle_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/id_recycle_item_head"
+                    android:layout_below="@+id/id_recycle_item_nickname"
+                    android:text="1分钟前" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_size_medium"
+                    android:maxLines="2"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_recycle_item_title"
+                    android:text="我是刚来的，很喜欢他们在一起！我只是想证实他们是真的？"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_size_small"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_recycle_item_content"
+                    android:text="我是是覅司法解释是值是开放接口是时间独立访客记录是是酒店开了房就开始了手机打开了附近上空乱飞的快乐加速度克劳馥是"
+                    android:maxLines="3"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/id_recycle_item_photo"
+                    android:layout_height="wrap_content">
+
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/id_recycle_item_zan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/zan_bg"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/id_recycle_item_zannum"
+                        android:text="赞"
+                        android:textSize="@dimen/text_size_small"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/id_recycle_item_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/comment"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="@dimen/text_size_small"
+                        android:layout_marginLeft="6dp"
+                        android:id="@+id/id_recycle_item_commentnum"
+                        android:layout_gravity="center_vertical"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

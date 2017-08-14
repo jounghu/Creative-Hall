@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:layout_height="wrap_content">
+    
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="100dp"
+        android:id="@+id/id_fragment_game_head"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/id_fragment_game_head"
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/id_fragment_game_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文明旅游-12301公益海报和微视频大赛"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            />
+
+        <TextView
+            android:id="@+id/id_fragment_game_favorite_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_light"
+            android:text="0人感兴趣"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/clock"
+                />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间："
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/id_fragment_game_time"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:maxLines="1"
+                android:text="2016-12-14 14:00"
+              />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/map"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地点："
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                />
+
+            <TextView
+                android:id="@+id/id_fragment_game_location"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="上海电机学院图书馆1楼"
+                android:maxLines="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/person_location"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主办方："
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                />
+
+            <TextView
+                android:id="@+id/id_fragment_game_organizer"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="上海电机学院团委"
+                android:maxLines="1"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

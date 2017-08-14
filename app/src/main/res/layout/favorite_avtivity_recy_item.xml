@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/id_activity_forcuse_recy_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        fresco:placeholderImage="@mipmap/head"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        fresco:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/id_activity_forcuse_recy_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:textColor="@color/secondary_text"
+        android:text="提升个人影响力，绝非是虚无缥缈的心灵鸡汤，而是一场美丽曼妙的人生修行。-------演讲"
+        />
+
+</LinearLayout>

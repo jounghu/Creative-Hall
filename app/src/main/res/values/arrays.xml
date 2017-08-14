@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+  <string-array name="tab_titles">
+    <item>活动</item>
+    <item>项目</item>
+    <item>比赛</item>
+    <item>校外</item>
+  </string-array>
+
+
+
+</resources>

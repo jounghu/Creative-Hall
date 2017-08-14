@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_fragment_game_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <TextView
+            android:id="@+id/id_registe_toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="比赛"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_large" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/id_fragment_game_detail_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/id_fragment_game_head"
+                            android:layout_width="100dp"
+                            android:layout_height="200dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:id="@+id/id_fragment_game_detail_head"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_vertical_margin"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/id_fragment_game_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                                android:text="文明旅游-12301公益海报和微视频大赛"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_large" />
+
+                            <TextView
+                                android:id="@+id/id_fragment_game_favorite_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                                android:text="0人感兴趣"
+                                android:textColor="@color/primary_light" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:src="@mipmap/clock" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:text="时间：" />
+
+                                <TextView
+                                    android:id="@+id/id_fragment_game_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:maxLines="1"
+                                    android:text="2016-12-14 14:00" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:src="@mipmap/map" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:text="地点：" />
+
+                                <TextView
+                                    android:id="@+id/id_fragment_game_location"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="上海电机学院图书馆1楼" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:src="@mipmap/person_location" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:text="主办方：" />
+
+                                <TextView
+                                    android:id="@+id/id_fragment_game_organizer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="上海电机学院团委" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_margin="@dimen/activity_vertical_margin"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/id_fragment_game_detail_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/activity_vertical_margin"
+                            android:text="国家强盛，教育为本。改革开放以来，党和国家把教育作为关系现代化建设全局的根本问题，实施科教兴国战略，提出教育要面向现代化、面向世界、面向未来。为配合教育装备更新，相关政府采购工作进一步促进学校与厂商间的交流与合作，提高各级教学机构的技术装备水平;特此举办“2017中国国际教育装备及智慧教育展览会”（简称“CIEOE”）。上届展会回顾"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:src="@mipmap/want_to_noraml"
+                            android:id="@+id/id_fragment_game_detail_want_to_btn"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:layout_below="@+id/id_fragment_game_favroite"
+                        android:background="@drawable/shape_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/message" />
+
+                        <TextView
+                            android:id="@+id/id_fragment_game_detail_comemnt_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:text="已有评论1条" />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:layout_below="@+id/id_fragment_game_favroite"
+                        android:background="@drawable/shape_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.RecyclerView
+
+                            android:id="@+id/id_fragment_game_detail_comment_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/id_comment_input_form"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#f5f5f5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/id_fragment_game_detail_comemnt_input"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_weight="3"
+            android:background="@drawable/shape_bg"
+            android:hint="点击输入你的评论"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="10.0dip"
+            android:textColor="#ff545454"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/id_fragment_game_detail_comement_send"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15.0dip"
+            android:text="发送"
+            android:textColor="@android:color/black"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

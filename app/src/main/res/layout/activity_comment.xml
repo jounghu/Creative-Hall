@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_registe_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <TextView
+            android:id="@+id/id_registe_toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="主题详情"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_large" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/id_activity_comment_comment_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/id_recycle_item_head"
+
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="@dimen/activity_vertical_margin"
+                            fresco:placeholderImage="@mipmap/head"
+                            fresco:roundAsCircle="true" />
+
+                        <TextView
+                            android:id="@+id/id_recycle_item_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:layout_toRightOf="@+id/id_recycle_item_head"
+                            android:text="模样单纯善良"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/id_recycle_item_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/id_recycle_item_nickname"
+                            android:layout_toRightOf="@+id/id_recycle_item_head"
+                            android:text="1分钟前" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_vertical_margin">
+
+                        <TextView
+                            android:id="@+id/id_recycle_item_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:text="我是刚来的，很喜欢他们在一起！我只是想证实他们是真的？"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_size_medium" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/id_recycle_item_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="3"
+                            android:text="我是是覅司法解释是值是开放接口是时间独立访客记录是是酒店开了房就开始了手机打开了附近上空乱飞的快乐加速度克劳馥是"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="@dimen/text_size_small" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="10dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/id_recycle_item_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                        </android.support.v7.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:background="@drawable/shape_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/message" />
+
+                        <TextView
+                            android:id="@+id/id_activity_comment_comment_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:text="已有评论1条" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:background="@drawable/shape_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <cht.com.cht.widgt.MyRecyclerView
+                            android:id="@+id/id_activity_comment_comment_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></cht.com.cht.widgt.MyRecyclerView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_above="@+id/id_comment_input_form"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:id="@+id/id_comment_input_form"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#f5f5f5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/id_activity_comment_comment_input"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_weight="3"
+            android:background="@drawable/shape_bg"
+            android:hint="点击输入你的评论"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="10.0dip"
+            android:textColor="#ff545454"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/id_activity_comment_comment_send"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15.0dip"
+            android:text="发送"
+            android:textColor="@android:color/black"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <!-- android:icon="@mipmap/ic_message_white_48dp"-->
+    <group
+        android:id="@+id/group_index"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/id_navigation_menu_index"
+            android:icon="@mipmap/bank"
+            android:title="主页" />
+
+        <item
+            android:id="@+id/id_navigation_menu_verify"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@mipmap/verify"
+            android:title="认证" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/group_message"
+        android:checkableBehavior="none">
+        <!--这里技术有限 做不出来了-->
+        <item
+            android:id="@+id/id_navigation_menu_message"
+            android:icon="@mipmap/message"
+            android:visible="false"
+            app:actionViewClass="android.widget.TextView"
+            android:title="消息" />
+
+        <item
+            android:id="@+id/id_navigation_menu_focuse"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@mipmap/focuse"
+            android:title="关注" />
+
+
+        <item
+            android:id="@+id/id_navigation_menu_collection"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@mipmap/collection"
+            android:title="收藏" />
+    </group>
+
+    <!-- <group
+         android:id="@+id/group_focuse"
+         android:checkableBehavior="none">
+
+     </group>-->
+
+
+    <!-- <group
+         android:id="@+id/group_collection"
+         android:checkableBehavior="none">
+
+     </group>-->
+
+
+    <group
+        android:id="@+id/group_setting"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/id_navigation_menu_setting"
+            android:icon="@mipmap/settings"
+            android:title="设置与帮助" />
+    </group>
+
+    <group
+        android:id="@+id/group_feedback"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/id_navigation_menu_feedback"
+            android:icon="@mipmap/feedback"
+            android:title="反馈" />
+    </group>
+
+   <!-- <group
+        android:id="@+id/group_about"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/id_navigation_menu_about"
+            android:icon="@mipmap/about"
+            android:title="关于" />
+    </group>-->
+
+
+</menu>

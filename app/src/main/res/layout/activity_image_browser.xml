@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:id="@+id/id_activity_image_browser_ll"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/id_activity_image_browser_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="1/2"
+        android:textColor="@color/primary_light"
+        android:textSize="@dimen/text_size_large" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_activity_image_browser_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+</LinearLayout>

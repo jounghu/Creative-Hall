@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_feedback_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="反馈"
+            android:textColor="@color/primary_light"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/id_feedback_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="提交"
+            android:textColor="@color/primary_light_normal"
+            android:textSize="@dimen/text_size_large" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/id_feedback_et"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="请描述你的问题..."
+        android:maxLength="240"
+        android:textSize="12dp"
+        android:gravity="left|top"
+        />
+
+    <TextView
+        android:id="@+id/id_feedback_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="240"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/text_size_large"
+        />
+
+</LinearLayout>
